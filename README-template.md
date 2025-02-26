@@ -1,19 +1,19 @@
-# stactools-ephemeral
+# stactools-osc-hazard
 
-[![PyPI](https://img.shields.io/pypi/v/stactools-ephemeral?style=for-the-badge)](https://pypi.org/project/stactools-ephemeral/)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/stactools-packages/ephemeral/continuous-integration.yml?style=for-the-badge)
+[![PyPI](https://img.shields.io/pypi/v/stactools-osc-hazard?style=for-the-badge)](https://pypi.org/project/stactools-osc-hazard/)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/stactools-packages/osc-hazard/continuous-integration.yml?style=for-the-badge)
 
-- Name: ephemeral
-- Package: `stactools.ephemeral`
-- [stactools-ephemeral on PyPI](https://pypi.org/project/stactools-ephemeral/)
+- Name: osc-hazard
+- Package: `stactools.osc_hazard`
+- [stactools-osc-hazard on PyPI](https://pypi.org/project/stactools-osc-hazard/)
 - Owner: @githubusername
 - [Dataset homepage](http://example.com)
 - STAC extensions used:
   - [proj](https://github.com/stac-extensions/projection/)
 - Extra fields:
-  - `ephemeral:custom`: A custom attribute
-- [Browse the example in human-readable form](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/ephemeral/main/examples/collection.json)
-- [Browse a notebook demonstrating the example item and collection](https://github.com/stactools-packages/ephemeral/tree/main/docs/example.ipynb)
+  - `osc-hazard:custom`: A custom attribute
+- [Browse the example in human-readable form](https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/stactools-packages/osc-hazard/main/examples/collection.json)
+- [Browse a notebook demonstrating the example item and collection](https://github.com/stactools-packages/osc-hazard/tree/main/docs/example.ipynb)
 
 A short description of the package and its usage.
 
@@ -25,7 +25,7 @@ A short description of the package and its usage.
 ## Installation
 
 ```shell
-pip install stactools-ephemeral
+pip install stactools-osc-hazard
 ```
 
 ## Command-line usage
@@ -33,10 +33,10 @@ pip install stactools-ephemeral
 Description of the command line functions
 
 ```shell
-stac ephemeral create-item source destination
+stac osc-hazard create-item source destination
 ```
 
-Use `stac ephemeral --help` to see all subcommands and options.
+Use `stac osc-hazard --help` to see all subcommands and options.
 
 ## Contributing
 
