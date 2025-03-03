@@ -1,10 +1,14 @@
-name: stactools-ephemeral
+name: stactools-osc-hazard
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - conda-forge::gdal>=3.3
-  - conda-forge::geos>=3.3
-  - conda-forge::rasterio>=1.3
-  - conda-forge::sqlite
-  - conda-forge::libstdcxx-ng # gdal dependency. Make sure it's from the same channel as gdal
+  - stactools>=0.4.0
+  - xstac
+  - pystac
+  - shapely
+  - zarr
+  - xarray
+  - zarr
+  - pip
+  - pip:
+    - hazard@git+https://github.com/os-climate/hazard.git
