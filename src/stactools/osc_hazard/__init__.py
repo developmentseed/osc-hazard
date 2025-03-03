@@ -1,8 +1,9 @@
 import stactools.core
 from stactools.cli.registry import Registry
 from stactools.osc_hazard.stac import create_collection, create_item
+from stactools.osc_hazard.cubify import cubify
 
-__all__ = ["create_collection", "create_item"]
+__all__ = ["create_collection", "create_item", "cubify"]
 
 stactools.core.use_fsspec()
 
