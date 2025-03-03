@@ -9,4 +9,6 @@ dependencies:
   - zarr
   - xarray
   - zarr
-  - hazard@git+https://github.com/os-climate/hazard
+  - pip
+  - pip:
+    - hazard@git+https://github.com/os-climate/hazard.git
