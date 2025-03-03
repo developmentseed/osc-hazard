@@ -26,8 +26,6 @@ def _parse_index_name(key: str, prefix: str = ".*"):
 
 
 def _index_arrays(store: OscZarr):
-    indexes = {}
-
     all_names = store.listdir()
     names = [name for name in all_names if re.match(".*_\d{4}$", name)]
     if not names:
@@ -89,7 +87,8 @@ def build_yearly_zarr_cubes(
             output_dir / f"{indicator_name}_{year:04d}.zarr"
         )
 
-        # since we are using append mode for writing zarr, we need to make sure the store does not yet exist
+        # since we are using append mode for writing zarr, we need to make sure 
+        # the store does not yet exist
         if output_path.is_dir():
             shutil.rmtree(output_path)
 
