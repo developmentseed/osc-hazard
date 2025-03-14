@@ -1,5 +1,5 @@
 [project]
-name = "stactools-ephemeral"
+name = "stactools-osc-hazard"
 version = "0.1.0"
 description = "PROVIDE DESCRIPTION HERE"
 readme = "README.md"
@@ -19,7 +19,16 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">=3.9"
-dependencies = ["stactools>=0.4.0"]
+dependencies = [
+    "stactools>=0.4.0",
+    "xstac",
+    "pystac",
+    "shapely",
+    "zarr",
+    "xarray",
+    "zarr",
+    "hazard",
+]
 
 [dependency-groups]
 dev = [
@@ -34,8 +43,8 @@ dev = [
 docs = ["pystac~=1.10", "ipykernel~=6.29", "jinja2~=3.1"]
 
 [project.urls]
-Github = "https://github.com/stactools-packages/ephemeral"
-Issues = "https://github.com/stactools-packages/ephemeral/issues"
+Github = "https://github.com/stactools-packages/osc-hazard"
+Issues = "https://github.com/stactools-packages/osc-hazard/issues"
 
 [build-system]
 requires = ["setuptools", "wheel"]
@@ -50,3 +59,6 @@ mypy_path = "src"
 
 [tool.ruff]
 lint.select = ["E", "F", "I"]
+
+[tool.uv.sources]
+hazard = { git = "https://github.com/joemoorhouse/hazard", rev = "2a989c87935d8b9b0335f46ff1ba7e327a8b9944" }
